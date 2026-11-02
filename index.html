@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TokoKu</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                TokoKu
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Belanja Elektronik Mudah dan Cepat</h1>
+            <p>
+                Produk berkualitas untuk pelajar, mahasiswa,
+                dan kebutuhan teknologi sehari-hari.
+            </p>
+            <a href="product.html" class="btn">Belanja Sekarang </a>
+</div>
+
+        </div>
+
+    </section>
+
+    <section class="search-section">
+        <input 
+            class="search-box"
+            type="text" 
+            placeholder="Cari produk...">
+    </section>
+
+    <!-- STATISTIK -->
+    <section class="stats">
+        <div class="stat-box">
+            <h2>50+</h2>
+            <p>Produk</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>500+</h2>
+            <p>Pelanggan</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>4.9★</h2>
+            <p>Rating</p>
+        </div>
+    </section>
+
+    <!-- PRODUK UNGGULAN -->
+    <section class="featured">
+        <h2>Produk Unggulan</h2>
+        <div class="product-container">
+            <div class="card">
+                <span class="badge">
+                    Terlaris
+                </span>
+                <img src="image/laptop.jpg" alt="Laptop">
+                <h3>Laptop</h3>
+                <p>Laptop berkualitas untuk belajar dan bekerja. </p>
+                <h4>Rp5.000.000</h4>
+                <a href="contact.html" class="btn">Beli Sekarang</a>
+                <div class="cart-buttons">
+                   <button
+                    class="btn"
+                    onclick="addToCart('Laptop', 5000000)">
+                    🛒 tambah ke keranjang
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="badge">
+                    Favorit
+                </span>
+                <img src="image/keyboard.jpg" alt="Keyboard">
+                <h3>Keyboard</h3>
+                <p> Keyboard nyaman untuk digunakan setiap hari.</p>
+                <h4>Rp350.000</h4>
+                <a href="contact.html" class="btn">Beli Sekarang</a>
+                <div class="cart-buttons">
+                    <button
+                    class="btn"
+                    onclick="addToCart('Keyboard', 350000)">
+                    🛒 tambah ke keranjang
+                    </button>
+                   
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="badge">
+                    Baru
+                </span>
+                <img src="image/mouse.jpg" alt="Mouse">
+                <h3>Mouse</h3>
+                <p>Mouse nyaman untuk digunakan setiap hari. </p>
+                <h4>Rp150.000</h4>
+                <a href="contact.html" class="btn">Beli Sekarang</a>
+                <div class="cart-buttons">
+                    <button
+                    class="btn"
+                    onclick="addToCart('Mouse', 150000)">
+                    🛒 tambah ke keranjang
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="badge">
+                    Terlaris
+                </span>
+                <img src="image/camera.jpg" alt="Camera">
+                <h3>Camera</h3>
+                <p>Camera berkualitas untuk kebutuhan fotografi. </p>
+                <h4>Rp2.500.000</h4>
+                <a href="contact.html" class="btn">Beli Sekarang</a>
+                <div class="cart-buttons">
+                    <button
+                    class="btn"
+                    onclick="addToCart('Camera', 2500000)">
+                    🛒 tambah ke keranjang
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="badge">
+                    Favorit
+                </span>
+                <img src="image/headphone.jpg" alt="Headphone">
+                <h3>Headphone</h3>
+                <p>Headphone berkualitas untuk kebutuhan audio. </p>
+                <h4>Rp100.000</h4>
+                <a href="contact.html" class="btn">Beli Sekarang</a>
+                <div class="cart-buttons">
+                    <button
+                    class="btn"
+                    onclick="addToCart('Headphone', 100000)">
+                    🛒 tambah ke keranjang
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="badge">
+                    Baru
+                </span>
+                <img src="image/mini-speaker.jpg" alt="Mini Speaker">
+                <h3>Mini Speaker</h3>
+                <p>Mini speaker berkualitas untuk kebutuhan audio. </p>
+                <h4>Rp200.000</h4>
+                <a href="contact.html" class="btn">Beli Sekarang</a>
+                <div class="cart-buttons">
+                    <button
+                    class="btn"
+                    onclick="addToCart('Mini Speaker', 200000)">
+                    🛒 tambah ke keranjang
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="badge">
+                    Terlaris
+                </span>
+                <img src="image/printer.jpg" alt="Printer">
+                <h3>Printer</h3>
+                <p>Printer berkualitas untuk kebutuhan cetak. </p>
+                <h4>Rp1.000.000</h4>
+                <a href="contact.html" class="btn">Beli Sekarang</a>
+                <div class="cart-buttons">
+                    <button
+                    class="btn"
+                    onclick="addToCart('Printer', 1000000)">
+                    🛒 tambah ke keranjang
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="badge">
+                    Favorit
+                </span>
+                <img src="image/tws.jpg" alt="TWS">
+                <h3>TWS</h3>
+                <p>TWS berkualitas untuk kebutuhan audio. </p>
+                <h4>Rp100.000</h4>
+                <a href="contact.html" class="btn">Beli Sekarang</a>
+                <div class="cart-buttons">
+                    <button
+                    class="btn"
+                    onclick="addToCart('TWS', 100000)">
+                    🛒 tambah ke keranjang
+                    </button>
+                </div>
+        </div>
+    </section>
+
+    <!-- KEUNGGULAN -->
+        <div class="cart-container">
+             <a href="cart.html" class="cart-link">
+                🛒 Keranjang
+                  <span class="cart-count" id="cart-count">0</span>
+            </a>
+        </div>
+
+    </section>
+    <!-- KEUNGGULAN -->
+    <section class="advantages">
+        <h2>Mengapa Memilih TokoKu?</h2>
+        <div class="adv-container">
+            <div class="adv-box">
+                ✅ Produk Berkualitas
+            </div>
+            <div class="adv-box">
+                ✅ Harga Terjangkau
+            </div>
+            <div class="adv-box">
+                ✅ Pengiriman Cepat
+            </div>
+            <div class="adv-box">
+                ✅ Customer Support
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TESTIMONI -->
+    <section class="testimonial">
+        <h2>Testimoni Pelanggan</h2>
+        <div class="testi-container">
+            <div class="testi-card">
+                <p>
+                    "Laptop yang saya beli sangat bagus dan sesuai
+                    deskripsi."
+                </p>
+                <h4>- Andi</h4>
+            </div>
+            <div class="testi-card">
+                <p>
+                    "printer sangat membantu untuk praktik
+                     di sekolah."
+                </p>
+                <h4>- Budi</h4>
+            </div>
+            <div class="testi-card">
+                <p>
+                    "Pelayanan ramah dan pengirimannya cepat."
+                </p>
+                <h4>- Sinta</h4>
+            </div>
+        </div>
+
+    </section>
+    <!-- CTA -->
+    <section class="cta">
+        <h2>
+            Temukan Produk Elektronik Terbaik Sekarang!
+        </h2>
+        <a href="product.html" class="btn">
+            Lihat Semua Produk
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>TokoKu</h3>
+                <p>
+                    Toko elektronik terpercaya untuk kebutuhan teknologi
+                    dan jaringan.
+                </p>
+            </div>
+
+            <div>
+                <h3>Menu</h3>
+                <p>Home</p>
+                <p>Product</p>
+                <p>About</p>
+                <p>Contact</p>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>📧 TokoKu@gmail.com</p>
+                <p>📱 0812-3456-7890</p>
+            </div>
+        </div>
+
+        <hr>
+        <p class="copyright">
+            <span id="tahun"></span> TokoKu - All Rights Reserved
+        </p>
+    </footer>
+<script src="js/script.js"></script>
+</script>
+</body>
+</html>
